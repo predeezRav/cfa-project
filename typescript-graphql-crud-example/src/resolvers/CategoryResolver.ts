@@ -15,8 +15,8 @@ class CategoryInput{
 export class CategoryResolver {
     @Mutation( () => Boolean)
    async createCategory(
-        @Arg('name') name: string,
-        @Arg('description') description: string
+        @Arg("options") options: string,
+        
     
     ) {
        await Category.insert({name, description});
